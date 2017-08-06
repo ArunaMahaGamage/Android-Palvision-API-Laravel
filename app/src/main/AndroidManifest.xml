@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".secondListView.SecondListViewActivity" />
+        <activity android:name=".customer.CustomerInsertActivity" />
+        <activity android:name=".customer.CustomerUpdateActivity" />
+        <activity android:name=".customer.CustomerRetriveActivity" />
+        <activity android:name=".customer.CustomerDeleteActivity"></activity>
     </application>
 
 </manifest>
