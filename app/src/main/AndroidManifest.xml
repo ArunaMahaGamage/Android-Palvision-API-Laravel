@@ -20,7 +20,11 @@
         <activity android:name=".customer.CustomerInsertActivity" />
         <activity android:name=".customer.CustomerUpdateActivity" />
         <activity android:name=".customer.CustomerRetriveActivity" />
-        <activity android:name=".customer.CustomerDeleteActivity"></activity>
+        <activity android:name=".customer.CustomerDeleteActivity" />
+        <activity android:name=".product.ProductInsertActivity" />
+        <activity android:name=".product.ProductUpdateActivity" />
+        <activity android:name=".product.ProductRetriveActivity" />
+        <activity android:name=".product.ProductDeleteActivity"></activity>
     </application>
 
 </manifest>
