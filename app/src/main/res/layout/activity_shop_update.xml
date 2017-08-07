@@ -16,23 +16,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.1"
+                android:layout_weight="0.2"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="0.2"
                     android:gravity="center"
-                    android:text="Insert Product Data"
+                    android:text="Update Shop Data"
                     android:textSize="24sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Price" />
+                        android:text="Name" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -63,23 +63,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Type" />
+                        android:text="Address" />
 
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Manufacturer" />
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Customer Id" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -89,7 +74,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/et_product_insert_id"
+                        android:id="@+id/et_shop_update_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -98,53 +83,36 @@
                         android:inputType="textPersonName" />
 
                     <EditText
-                        android:id="@+id/et_product_insert_price"
+                        android:id="@+id/et_shop_update_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:hint="Price"
+                        android:hint="Name"
                         android:inputType="textPersonName" />
 
                     <EditText
-                        android:id="@+id/et_product_insert_type"
+                        android:id="@+id/et_shop_update_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:hint="Type"
+                        android:hint="Address"
                         android:inputType="textPersonName" />
 
-                    <EditText
-                        android:id="@+id/et_product_insert_manufacturer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="Manufacturer"
-                        android:inputType="textPersonName" />
-
-                    <EditText
-                        android:id="@+id/et_product_insert_customer_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="Customer Id"
-                        android:inputType="textPersonName" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight="0.1">
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btn_product_insert"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_shop_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Submit" />
             </LinearLayout>
