@@ -20,6 +20,7 @@ import com.palvision.androidpalvisionapilaravel.product.ProductDeleteActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductInsertActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductRetriveActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductUpdateActivity;
+import com.palvision.androidpalvisionapilaravel.vender.VendorInsertActivity;
 
 import java.util.ArrayList;
 
@@ -92,7 +93,7 @@ public class SecondListViewActivity extends AppCompatActivity {
         intents [2][2] = new Intent(SecondListViewActivity.this, MainActivity.class);
         intents [2][3] = new Intent(SecondListViewActivity.this, MainActivity.class);
 
-        intents [3][0] = new Intent(SecondListViewActivity.this, MainActivity.class);
+        intents [3][0] = new Intent(SecondListViewActivity.this, VendorInsertActivity.class);
         intents [3][1] = new Intent(SecondListViewActivity.this, MainActivity.class);
         intents [3][2] = new Intent(SecondListViewActivity.this, MainActivity.class);
         intents [3][3] = new Intent(SecondListViewActivity.this, MainActivity.class);

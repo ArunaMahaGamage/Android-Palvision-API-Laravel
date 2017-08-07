@@ -24,7 +24,11 @@
         <activity android:name=".product.ProductInsertActivity" />
         <activity android:name=".product.ProductUpdateActivity" />
         <activity android:name=".product.ProductRetriveActivity" />
-        <activity android:name=".product.ProductDeleteActivity"></activity>
+        <activity android:name=".product.ProductDeleteActivity" />
+        <activity android:name=".vender.VendorUpdateActivity" />
+        <activity android:name=".vender.VendorInsertActivity" />
+        <activity android:name=".vender.VendorRetriveActivity" />
+        <activity android:name=".vender.VendorDeleteActivity"></activity>
     </application>
 
 </manifest>
