@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidPalvisionAPI.iml" filepath="$PROJECT_DIR$/AndroidPalvisionAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidPalvisionAPILaravel.iml" filepath="$PROJECT_DIR$/AndroidPalvisionAPILaravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

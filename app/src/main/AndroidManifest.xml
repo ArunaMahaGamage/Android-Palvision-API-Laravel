@@ -32,7 +32,11 @@
         <activity android:name=".shop.ShopInsertActivity" />
         <activity android:name=".shop.ShopUpdateActivity" />
         <activity android:name=".shop.ShopRetriveActivity" />
-        <activity android:name=".shop.ShopDeleteActivity"></activity>
+        <activity android:name=".shop.ShopDeleteActivity" />
+        <activity android:name=".sale.SaleInsertActivity" />
+        <activity android:name=".sale.SaleUpdateActivity" />
+        <activity android:name=".sale.SaleRetriveActivity" />
+        <activity android:name=".sale.SaleDeleteActivity"></activity>
     </application>
 
 </manifest>

@@ -1,17 +1,15 @@
-package com.palvision.androidpalvisionapilaravel.customer;
+package com.palvision.androidpalvisionapilaravel.sale;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.palvision.androidpalvisionapilaravel.R;
 
-public class CustomerInsertActivity extends AppCompatActivity {
-
-
+public class SaleDeleteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_insert);
+        setContentView(R.layout.activity_sale_delete);
     }
 }

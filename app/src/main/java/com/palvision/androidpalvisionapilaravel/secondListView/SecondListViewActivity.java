@@ -20,7 +20,18 @@ import com.palvision.androidpalvisionapilaravel.product.ProductDeleteActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductInsertActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductRetriveActivity;
 import com.palvision.androidpalvisionapilaravel.product.ProductUpdateActivity;
+import com.palvision.androidpalvisionapilaravel.sale.SaleDeleteActivity;
+import com.palvision.androidpalvisionapilaravel.sale.SaleInsertActivity;
+import com.palvision.androidpalvisionapilaravel.sale.SaleRetriveActivity;
+import com.palvision.androidpalvisionapilaravel.sale.SaleUpdateActivity;
+import com.palvision.androidpalvisionapilaravel.shop.ShopDeleteActivity;
+import com.palvision.androidpalvisionapilaravel.shop.ShopInsertActivity;
+import com.palvision.androidpalvisionapilaravel.shop.ShopRetriveActivity;
+import com.palvision.androidpalvisionapilaravel.shop.ShopUpdateActivity;
+import com.palvision.androidpalvisionapilaravel.vender.VendorDeleteActivity;
 import com.palvision.androidpalvisionapilaravel.vender.VendorInsertActivity;
+import com.palvision.androidpalvisionapilaravel.vender.VendorRetriveActivity;
+import com.palvision.androidpalvisionapilaravel.vender.VendorUpdateActivity;
 
 import java.util.ArrayList;
 
@@ -88,20 +99,20 @@ public class SecondListViewActivity extends AppCompatActivity {
         intents [1][2] = new Intent(SecondListViewActivity.this, ProductRetriveActivity.class);
         intents [1][3] = new Intent(SecondListViewActivity.this, ProductDeleteActivity.class);
 
-        intents [2][0] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [2][1] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [2][2] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [2][3] = new Intent(SecondListViewActivity.this, MainActivity.class);
+        intents [2][0] = new Intent(SecondListViewActivity.this, ShopInsertActivity.class);
+        intents [2][1] = new Intent(SecondListViewActivity.this, ShopUpdateActivity.class);
+        intents [2][2] = new Intent(SecondListViewActivity.this, ShopRetriveActivity.class);
+        intents [2][3] = new Intent(SecondListViewActivity.this, ShopDeleteActivity.class);
 
         intents [3][0] = new Intent(SecondListViewActivity.this, VendorInsertActivity.class);
-        intents [3][1] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [3][2] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [3][3] = new Intent(SecondListViewActivity.this, MainActivity.class);
+        intents [3][1] = new Intent(SecondListViewActivity.this, VendorUpdateActivity.class);
+        intents [3][2] = new Intent(SecondListViewActivity.this, VendorRetriveActivity.class);
+        intents [3][3] = new Intent(SecondListViewActivity.this, VendorDeleteActivity.class);
 
-        intents [4][0] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [4][1] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [4][2] = new Intent(SecondListViewActivity.this, MainActivity.class);
-        intents [4][3] = new Intent(SecondListViewActivity.this, MainActivity.class);
+        intents [4][0] = new Intent(SecondListViewActivity.this, SaleInsertActivity.class);
+        intents [4][1] = new Intent(SecondListViewActivity.this, SaleUpdateActivity.class);
+        intents [4][2] = new Intent(SecondListViewActivity.this, SaleRetriveActivity.class);
+        intents [4][3] = new Intent(SecondListViewActivity.this, SaleDeleteActivity.class);
 
         intents [5][0] = new Intent(SecondListViewActivity.this, MainActivity.class);
         intents [5][1] = new Intent(SecondListViewActivity.this, MainActivity.class);
