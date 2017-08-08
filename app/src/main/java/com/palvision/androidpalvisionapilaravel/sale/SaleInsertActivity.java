@@ -28,6 +28,8 @@ public class SaleInsertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sale_insert);
+
+        initObjects();
     }
     private void initObjects() {
         mId = (EditText) findViewById(R.id.et_sale_insert_id);

@@ -27,6 +27,8 @@ public class CustomerUpdateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_update);
+
+        initObjects();
     }
     private void initObjects() {
         mId = (EditText) findViewById(R.id.et_customer_update_id);
