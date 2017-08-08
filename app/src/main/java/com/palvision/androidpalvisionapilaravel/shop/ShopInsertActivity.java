@@ -32,11 +32,11 @@ public class ShopInsertActivity extends AppCompatActivity {
         initObjects();
     }
     private void initObjects() {
-        mId = (EditText) findViewById(R.id.et_customer_insert_id);
-        mName = (EditText) findViewById(R.id.et_customer_insert_name);
-        mAddress =(EditText) findViewById(R.id.et_customer_insert_address);
+        mId = (EditText) findViewById(R.id.et_shop_insert_id);
+        mName = (EditText) findViewById(R.id.et_shop_insert_name);
+        mAddress =(EditText) findViewById(R.id.et_shop_insert_address);
 
-        submit = (Button) findViewById(R.id.btn_product_insert);
+        submit = (Button) findViewById(R.id.btn_shop_insert);
 
         json = new JSONObject();
 

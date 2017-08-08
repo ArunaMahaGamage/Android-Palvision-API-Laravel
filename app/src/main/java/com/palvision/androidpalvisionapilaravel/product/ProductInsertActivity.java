@@ -33,10 +33,10 @@ public class ProductInsertActivity extends AppCompatActivity {
         initObjects();
     }
     private void initObjects() {
-        mId = (EditText) findViewById(R.id.et_customer_insert_id);
-        mPrice = (EditText) findViewById(R.id.et_customer_insert_name);
-        mType =(EditText) findViewById(R.id.et_customer_insert_address);
-        mManufacturer = (EditText) findViewById(R.id.et_customer_insert_phone);
+        mId = (EditText) findViewById(R.id.et_product_insert_id);
+        mPrice = (EditText) findViewById(R.id.et_product_insert_price);
+        mType =(EditText) findViewById(R.id.et_product_insert_type);
+        mManufacturer = (EditText) findViewById(R.id.et_product_insert_manufacturer);
         mCustomerId = (EditText) findViewById(R.id.et_product_insert_customer_id);
 
         submit = (Button) findViewById(R.id.btn_product_insert);
