@@ -81,7 +81,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/et_customer_insert_id"
+                        android:id="@+id/et_customer_update_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -90,7 +90,7 @@
                         android:inputType="textPersonName" />
 
                     <EditText
-                        android:id="@+id/et_customer_insert_name"
+                        android:id="@+id/et_customer_update_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -99,7 +99,7 @@
                         android:inputType="textPersonName" />
 
                     <EditText
-                        android:id="@+id/et_customer_insert_address"
+                        android:id="@+id/et_customer_update_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -108,7 +108,7 @@
                         android:inputType="textPersonName" />
 
                     <EditText
-                        android:id="@+id/et_customer_insert_phone"
+                        android:id="@+id/et_customer_update_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
