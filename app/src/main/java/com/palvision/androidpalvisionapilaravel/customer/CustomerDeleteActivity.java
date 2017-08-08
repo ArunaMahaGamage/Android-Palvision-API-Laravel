@@ -36,8 +36,9 @@ public class CustomerDeleteActivity extends AppCompatActivity {
         mName = (EditText) findViewById(R.id.et_customer_insert_name);
         mAddress =(EditText) findViewById(R.id.et_customer_insert_address);
         mPhone = (EditText) findViewById(R.id.et_customer_insert_phone);
-        submit = (Button) findViewById(R.id.btn_customer_insert);
         */
+        submit = (Button) findViewById(R.id.btn_customer_delete);
+
 
         json = new JSONObject();
 
