@@ -32,9 +32,10 @@ public class ShopDeleteActivity extends AppCompatActivity {
     }
     private void initObjects() {
         mId = (EditText) findViewById(R.id.et_shop_delete_id);
+        /*
         mName = (EditText) findViewById(R.id.et_shop_delete_name);
         mAddress =(EditText) findViewById(R.id.et_shop_delete_address);
-
+        */
         submit = (Button) findViewById(R.id.btn_shop_delete);
 
         json = new JSONObject();
@@ -43,8 +44,10 @@ public class ShopDeleteActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mSID =  mId.getText().toString();
+                /*
                 mSName = mName.getText().toString();
                 mSAddress = mAddress.getText().toString();
+                */
 
                 createJSON();
             }
@@ -55,8 +58,10 @@ public class ShopDeleteActivity extends AppCompatActivity {
 
         try {
             json.put("id",mSID);
+            /*
             json.put("name",mSName);
             json.put("address",mSAddress);
+            */
 
             callBackend();
 
