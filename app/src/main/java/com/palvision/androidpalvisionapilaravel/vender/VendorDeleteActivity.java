@@ -37,7 +37,7 @@ public class VendorDeleteActivity extends AppCompatActivity {
         mStaffNumber =(EditText) findViewById(R.id.et_vendor_insert_staffnumber);
         */
 
-        submit = (Button) findViewById(R.id.btn_product_delete);
+        submit = (Button) findViewById(R.id.btn_vendor_delete);
 
         json = new JSONObject();
 

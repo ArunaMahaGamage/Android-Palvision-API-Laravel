@@ -36,7 +36,7 @@ public class VendorInsertActivity extends AppCompatActivity {
         mName = (EditText) findViewById(R.id.et_vendor_insert_name);
         mStaffNumber =(EditText) findViewById(R.id.et_vendor_insert_staffnumber);
 
-        submit = (Button) findViewById(R.id.btn_product_insert);
+        submit = (Button) findViewById(R.id.btn_vendor_insert);
 
         json = new JSONObject();
 
