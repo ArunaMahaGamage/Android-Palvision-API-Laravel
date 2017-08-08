@@ -77,7 +77,7 @@ public class CustomerInsertActivity extends AppCompatActivity {
         }
     }
     private void callBackend() {
-        String url = "http://192.168.1.101/json.php";
+        String url = "http://192.168.1.101/palvision/shop/insert/" + json.toString();
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
