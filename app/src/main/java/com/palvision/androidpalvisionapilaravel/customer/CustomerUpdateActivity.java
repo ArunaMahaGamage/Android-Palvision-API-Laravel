@@ -72,7 +72,7 @@ public class CustomerUpdateActivity extends AppCompatActivity {
         }
     }
     private void callBackend() {
-        String url = "http://192.168.1.101/palvision/customer/update/" + json.toString();
+        String url = "http://192.168.1.101:8080/palvision/customer/update/" + json.toString();
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

@@ -11,14 +11,25 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 import com.palvision.androidpalvisionapilaravel.MySingleton;
 import com.palvision.androidpalvisionapilaravel.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import cz.msebera.android.httpclient.entity.mime.Header;
+
+import static com.palvision.androidpalvisionapilaravel.urls.URL.BASE_URL;
+import static com.palvision.androidpalvisionapilaravel.urls.URL.PORT;
 
 public class CustomerInsertActivity extends AppCompatActivity {
 
@@ -69,34 +80,42 @@ public class CustomerInsertActivity extends AppCompatActivity {
 
             System.out.println(json);
 
-            Toast.makeText(CustomerInsertActivity.this, "json ...  " +json ,
-                    Toast.LENGTH_LONG).show();
+/*            Toast.makeText(CustomerInsertActivity.this, "json ...  " +json ,
+                    Toast.LENGTH_LONG).show();*/
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
     private void callBackend() {
-        String url = "http://192.168.1.101/palvision/customer/insert/" + json.toString();
+        String url = BASE_URL +":"+ PORT + "/palvision/customer/insert/";
 
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+
+        params.put("id", mIID);
+        params.put("name", mIName);
+        params.put("address", mIAddress);
+        params.put("phone", mIPhone);
+        client.post(getApplicationContext(), url,
+                params, new JsonHttpResponseHandler() {
+
+                   @Override
+                   public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONObject response) {
+                       super.onSuccess(statusCode, headers, response);
+
+                       Toast.makeText(CustomerInsertActivity.this, " " + response,
+                               Toast.LENGTH_LONG).show();
+                   }
 
                     @Override
-                    public void onResponse(JSONObject response) {
-                        Toast.makeText(CustomerInsertActivity.this, "Data sent to Server " + response,
+                    public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString, Throwable throwable) {
+                        super.onFailure(statusCode, headers, responseString, throwable);
+
+                        Toast.makeText(CustomerInsertActivity.this, "Error",
                                 Toast.LENGTH_LONG).show();
-                    }
-                }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
-                        System.out.println(error);
                     }
                 });
 
-// Access the RequestQueue through your singleton class.
-        MySingleton.getInstance(this).addToRequestQueue(jsObjRequest);
     }
 }

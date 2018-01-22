@@ -78,7 +78,7 @@ public class CustomerDeleteActivity extends AppCompatActivity {
         }
     }
     private void callBackend() {
-        String url = "http://192.168.1.101/palvision/customer/delete/" + json.toString();
+        String url = "http://192.168.1.101:8080/palvision/customer/delete/" + json.toString();
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
